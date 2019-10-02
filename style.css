@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+}
+
+#titleins {
+  font-family: serif;
+  font-size: 2em;
+  text-align: center;
+  padding: 2em;
+}
+
+button {
+  font-weight: bold;
+  padding: 1em;
+  font-size: 0.7em;
+  border-radius: 12px;
+  align: center;
+  background-color: #4CAF50;
+  border: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #008000;
+}
+
+footer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 0.7em;
+  text-align: right;
+}

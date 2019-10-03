@@ -1,11 +1,22 @@
 var Ins1 = [
   "démoniaque",
-  "dangereux",
+  "dangereux(se)",
   "monstre",
-  "terrifiant",
+  "terrifiant(e)",
   "diffamatoire",
-  "haineux",
-  "migrant"
+  "minable",
+  "insupportable",
+  "infidèle",
+  "détestable",
+  "désagréable",
+  "petit(e)",
+  "grand(e)",
+  "incommensurable",
+  "honteux(se)",
+  "baveux(se)",
+  "scandaleux(se)",
+  "haineux(se)",
+  "discutable"
 ];
 
 var Ins2 = [
@@ -14,10 +25,22 @@ var Ins2 = [
   "complotiste",
   "dictateur",
   "cancer",
+  "troll",
+  "migrant(e)",
   "mafieux(se)",
   "terroriste",
+  "skinhead",
+  "délinquant",
+  "fanatique",
+  "homophobe",
+  "républicain",
+  "démocrate",
+  "phallocrate",
   "escroc",
   "brony",
+  "technocrate",
+  "trekkie",
+  "menteur(euse)",
   "déchet",
   "emmerdeur(euse)",
   "intégriste",
@@ -32,7 +55,14 @@ var Ins3 = [
   "hitléro",
   "mao",
   "néo",
+  "capilo",
+  "romano",
   "nippo",
+  "mafio",
+  "sado",
+  "slavo",
+  "macho",
+  "miso",
   "afro",
   "gaucho",
   "germano",
@@ -45,8 +75,12 @@ var Ins4 = [
   "nazi",
   "centriste",
   "communiste",
+  "masochiste",
+  "sudiste",
+  "nordiste",
   "sexiste",
   "casher",
+  "communautariste",
   "maçonnique",
   "macroniste",
   "sarkoziste",
@@ -60,6 +94,7 @@ var Personnes = [
   "Eric Zemmour",
   "Donald Trump",
   "Nicolas Sarkozy",
+  "Bernard Tapie",
   "François Hollande",
   "Emmanuel Macron",
   "Brigitte Macron",
@@ -71,4 +106,8 @@ var Personnes = [
   "Max le Fou"
 ];
 
-var item = Personnes[Math.floor(Math.random()*Personnes.length)] + " : " +  Personnes[Math.floor(Math.random()*Personnes.length)] + " serait un(e) \"" + Ins1[Math.floor(Math.random()*Ins1.length)] + " " + Ins2[Math.floor(Math.random()*Ins2.length)] + " " + Ins3[Math.floor(Math.random()*Ins3.length)] + "-" + Ins4[Math.floor(Math.random()*Ins4.length)] + "\".";
+function randNum(asset) {
+  return Math.floor(Math.random()*asset.length);
+};
+
+var item = Personnes[randNum(Personnes)] + " : " +  Personnes[randNum(Personnes)] + " serait un(e) \"" + Ins1[randNum(Ins1)] + " " + Ins2[randNum(Ins2)] + " " + Ins3[randNum(Ins3)] + "-" + Ins4[randNum(Ins4)] + "\".";

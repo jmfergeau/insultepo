@@ -1,3 +1,4 @@
+// Ici sont déclarées les différentes parties de l'insulte à générer. Vous pouvez en rajouter à loisir.
 var Ins1 = [
   "démoniaque",
   "dangereux(se)",
@@ -97,6 +98,8 @@ var Ins4 = [
   "islamiste"
 ];
 
+// Ici une liste de personnes pour l'insulte. A la fois l'insulteur et l'insulté.
+// Parfois les deux sont la même personne. On pourrait éviter ça mais c'est plus drôle comme ça.
 var Personnes = [
   "Greta Thunberg",
   "Alexandre Benalla",
@@ -115,8 +118,13 @@ var Personnes = [
   "Max le Fou"
 ];
 
+// Ici une fonction super simple pour choisir un élément au hasard dans un array.
+// 'asset' étant le nom de l'array en question.
 function randNum(asset) {
   return Math.floor(Math.random()*asset.length);
 };
 
-var item = Personnes[randNum(Personnes)] + " : " +  Personnes[randNum(Personnes)] + " serait un(e) \"" + Ins1[randNum(Ins1)] + " " + Ins2[randNum(Ins2)] + " " + Ins3[randNum(Ins3)] + "-" + Ins4[randNum(Ins4)] + "\".";
+// Génération de l'insulte elle-même
+var item = Personnes[randNum(Personnes)] + " : " +  Personnes[randNum(Personnes)]
+            + " serait un(e) \"" + Ins1[randNum(Ins1)] + " " + Ins2[randNum(Ins2)]
+            + " " + Ins3[randNum(Ins3)] + "-" + Ins4[randNum(Ins4)] + "\".";

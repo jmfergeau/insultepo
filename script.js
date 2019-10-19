@@ -33,6 +33,7 @@ var Ins2 = [
   "cancer",
   "troll",
   "tyran",
+  "tanche",
   "illettré(e)",
   "migrant(e)",
   "mafieux(se)",

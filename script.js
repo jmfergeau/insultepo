@@ -14,7 +14,7 @@ var Ins1 = [
   "désagréable",
   "tyrannique",
   "totalitaire",
-  "Irrationnel(le)",
+  "irrationnel(le)",
   "petit(e)",
   "grand(e)",
   "incommensurable",
@@ -39,6 +39,8 @@ var Ins2 = [
   "mafieux(se)",
   "terroriste",
   "sadique",
+  "gilet jaune",
+  "racaille",
   "skinhead",
   "délinquant",
   "fanatique",
@@ -69,14 +71,17 @@ var Ins3 = [
   "romano",
   "nippo",
   "mafio",
+  "pédo",
+  "géronto",
   "sado",
   "slavo",
+  "islamo",
+  "romano",
   "macho",
   "miso",
   "afro",
   "gaucho",
-  "germano",
-  "islamo"
+  "germano"
 ];
 
 var Ins4 = [
@@ -87,10 +92,10 @@ var Ins4 = [
   "communiste",
   "masochiste",
   "sudiste",
+  "syndicaliste",
   "radicaliste",
   "nordiste",
   "sexiste",
-  "casher",
   "communautariste",
   "maçonnique",
   "macroniste",
@@ -106,11 +111,15 @@ var Personnes = [
   "Alexandre Benalla",
   "Eric Zemmour",
   "Donald Trump",
+  "Barrack Obama",
   "Nicolas Sarkozy",
   "Bernard Tapie",
   "François Hollande",
   "Emmanuel Macron",
   "Brigitte Macron",
+  "François Ruffin",
+  "Nicolas Hulot",
+  "José Bové",
   "Marine Le Pen",
   "Marion Maréchal-Le Pen",
   "Jean-Luc Mélenchon",
@@ -123,7 +132,7 @@ var Personnes = [
 // 'asset' étant le nom de l'array en question.
 function randNum(asset) {
   return Math.floor(Math.random()*asset.length);
-};
+}
 
 // Génération de l'insulte elle-même
 var item = Personnes[randNum(Personnes)] + " : " +  Personnes[randNum(Personnes)]

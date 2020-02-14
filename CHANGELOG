@@ -1,0 +1,9 @@
+2.0
+Refonte totale du code avec les améliorations suivantes:
+- La page n'a plus besoin de se recharger, le texte change à la volée
+- Gestion des genres
+- On tombe moins souvent sur l'attaquant s'insultant lui-même
+- Quelques termes et noms supplémentaires
+
+1.0
+Première release

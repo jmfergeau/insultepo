@@ -53,7 +53,7 @@ var insPart2 = {
     "cancer",
     "troll",
     "tyran",
-    "petit con",
+    "connard",
     "délinquant",
     "escroc",
     "républicain",
@@ -73,7 +73,7 @@ var insPart2 = {
     "tanche",
     "républicaine",
     "racaille",
-    "petite conne",
+    "connasse",
     "délinquante",
     "putain",
     "codeuse de JS",
@@ -178,7 +178,6 @@ var pers = {
     "Jean-Luc Mélenchon",
     "Edouard Philippe",
     "Kim Jong Un",
-    "Max le Fou",
   ],
 
   female: [
@@ -223,14 +222,23 @@ function generate() {
   
   // On fait en sorte que l'attaquant ne soit pas forcément du même sexe que l'attaqué
   var attacker = pers.male.concat(pers.female);
+  var attacker = attacker[randNum(attacker)];
   
   // Génération de l'insulte elle-même
-  var item = attacker[randNum(attacker)] + " : " +  Personne[randNum(Personne)]
+  var item = attacker + " : " +  Personne[randNum(Personne)]
               + " serait " + unune + " « " + Ins1[randNum(Ins1)] + " " + Ins2[randNum(Ins2)]
               + " " + Ins3[randNum(Ins3)] + "-" + Ins4[randNum(Ins4)] + " ».";
   
   // Retourne la phrase elle-même dans l'élément theText
   var theText = document.getElementById('theText');
+
+  // Change le background en fonction du nom de l'attaquant
+  var bgheader = document.getElementById('headerpic');
+  bgheader.style = "background:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url('img/"+attacker+".jpg')";
+  bgheader.style.backgroundRepeat = "no-repeat";
+  bgheader.style.backgroundSize = "cover";
+  bgheader.style.backgroundPosition = "center";
+
   return theText.innerHTML = item;
 };
 

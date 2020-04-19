@@ -38,7 +38,6 @@ var insPart1 = {
     "ridicule",
     "désagréable",
     "tyrannique",
-    "totalitaire",
     "incommensurable",
     "discutable",
   ]
@@ -55,7 +54,9 @@ var insPart2 = {
     "tyran",
     "connard",
     "délinquant",
+    "infecté",
     "escroc",
+    "trader",
     "républicain",
     "menteur",
     "déchet",
@@ -71,10 +72,12 @@ var insPart2 = {
     "mafieuse",
     "vestale",
     "tanche",
+    "infectée",
     "républicaine",
     "racaille",
     "connasse",
     "délinquante",
+    "tradeuse",
     "putain",
     "codeuse de JS",
     "menteuse",
@@ -90,12 +93,16 @@ var insPart2 = {
     "terroriste",
     "sadique",
     "gilet jaune",
+    "carniste",
     "skinhead",
     "fanatique",
     "homophobe",
     "démocrate",
+    "totalitariste",
+    "antisémite",
     "phallocrate",
     "brony",
+    "végan",
     "technocrate",
     "trekkie",
     "intégriste",
@@ -118,6 +125,8 @@ var Ins3 = [
   "homo",
   "hétéro",
   "mafio",
+  "pro",
+  "anti",
   "anarcho",
   "pédo",
   "géronto",
@@ -143,7 +152,10 @@ var Ins4 = [
   "syndicaliste",
   "radicaliste",
   "mitterrandiste",
+  "LGBT",
   "nordiste",
+  "impérialiste",
+  "véganiste",
   "sexiste",
   "communautariste",
   "maçonnique",
@@ -165,14 +177,18 @@ var pers = {
     "Nicolas Sarkozy",
     "Bernard Tapie",
     "Alain Juppé",
+    "Alain Finkielkraut",
+    "Alain Delon", // ça fait pas mal de Alains, tiens...
     "Jean-Michel Blanquer",
     "Joachim Son-Forget",
     "Vladimir Poutine",
     "Le pape François",
+    "Didier Raoult",
     "Emmanuel Macron",
     "François Ruffin",
     "François Hollande",
     "Nicolas Hulot",
+    "Xi Jinping",
     "Mark Zuckerberg",
     "José Bové",
     "Jean-Luc Mélenchon",
@@ -208,7 +224,7 @@ function generate() {
 
   if (random_boolean <= 0.5) {
       // Si c'est un homme
-      var Ins1 = insPart1.male.concat(insPart1.any), // On concatenne male et any ensemble
+      var Ins1 = insPart1.male.concat(insPart1.any), // On concatenne les arrays male et any ensemble
           Ins2 = insPart2.male.concat(insPart2.any),
           Personne = pers.male, // On prend un homme et on lui donne le bon pronom
           unune = "un";
@@ -232,11 +248,11 @@ function generate() {
   // Retourne la phrase elle-même dans l'élément theText
   var theText = document.getElementById('theText');
 
-  // Change le background en fonction du nom de l'attaquant
+  // Change le background du header en fonction du nom de l'attaquant
   var bgheader = document.getElementById('headerpic');
-  bgheader.style = "background:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url('img/"+attacker+".jpg')";
-  bgheader.style.backgroundRepeat = "no-repeat";
-  bgheader.style.backgroundSize = "cover";
+  bgheader.style.background = "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url('img/"+attacker+".jpg')";
+  bgheader.style.backgroundRepeat = "no-repeat";  // On aurait pu techniquement foutre ces valeurs dans la ligne au dessus
+  bgheader.style.backgroundSize = "cover";        // mais pour une raison inconnue ça ne marche pas autrement que comme ça.
   bgheader.style.backgroundPosition = "center";
 
   return theText.innerHTML = item;

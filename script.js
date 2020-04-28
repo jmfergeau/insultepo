@@ -203,6 +203,7 @@ var pers = {
     "Isabelle Balkany",
     "Melania Trump",
     "Michelle Obama",
+    "Valérie Pécresse",
     "Hilary Clinton",
     "Marion Maréchal-Le Pen",
     "Ségolène Royale",

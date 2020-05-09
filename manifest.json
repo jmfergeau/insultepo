@@ -1,0 +1,19 @@
+{
+	"name": "Générateur d'insultes politiques",
+	"short_name": "Insultes politiques",
+	"description": "Une appli qui génère des fausses headlines où une célébrité en insulte une autre !",
+	"start_url": "index.html",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#007bff",
+	"icons": [
+		{
+			"src": "/img/favicon-192.png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/img/favicon-512.png",
+			"sizes": "512x512"
+		}
+	]
+}

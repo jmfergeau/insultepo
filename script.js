@@ -256,7 +256,7 @@ function generate() {
   bgheader.style.backgroundSize = "cover";        // mais pour une raison inconnue ça ne marche pas autrement que comme ça.
   bgheader.style.backgroundPosition = "center";
 
-  return theText.innerHTML = item;
+  return theText.innerHTML = item; // On balance un return parce qu'on est obligés.
 };
 
 // On rappelle la fonction pour qu'elle se lance au démarrage.

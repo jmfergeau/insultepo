@@ -211,6 +211,7 @@ var pers = {
 
     female: [
         "Greta Thunberg",
+        "Anne Hidalgo",
         "Brigitte Macron",
         "Marine Le Pen",
         "Isabelle Balkany",

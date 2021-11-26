@@ -1,5 +1,6 @@
 // Ici sont déclarées les différentes parties de l'insulte à générer. Vous pouvez en rajouter à loisir.
 // male pour les hommes, female pour les femmes, any pour les neutres
+// Faudra m'expliquer pourquoi var marche mieux que let ici...
 var insPart1 = {
     male: [
         "dangereux",
